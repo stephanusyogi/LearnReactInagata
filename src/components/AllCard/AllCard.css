@@ -1,5 +1,10 @@
 
 
+.container-margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .section-title {
     margin-left: 20px;
     font-size: 20px;
@@ -17,43 +22,80 @@ h1{
     margin-bottom: 50px;
 }
 
-.post {
-    display: flex;
-    border: 1px solid rgba(0,0,0,0.3);
-    width: 800px;
-    padding: 10px;
-    box-shadow: 0 0 16px rgba(0,0,0,0.5);
-    border-radius: 4px;
+
+.card {
+    width: 18rem;
+    height: 475px;
     margin: auto;
-    margin-bottom: 80px;
 }
 
+.card:hover {
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+.col-4 {
+    margin-top: 40px;
+}
+
+
 .img-thumb {
-    width: 200px;
+    width: 100%;
     height: 150px;
-    margin-right: 20px;
 }
 
 .img-thumb img {
-    width: 200px;
+    width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.content {
-    flex: 1
+h4{
+    font-weight: 500;
 }
 
-.content p.title {
-    margin: 0px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #3d4a6e;
-    margin-bottom: 16px;
+.linkselengkapnya {
+    font-size: 14px;
 }
 
-content p.desc {
-    margin: 0px;
-    font-size: 16px;
-    color: #4a4a4a
+.linkselengkapnya:hover {
+    cursor: pointer;
+    color: grey;
+    text-decoration: underline;
+    outline: none;
+    border: none;
+}
+
+.date , .auth {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.load {
+    text-align: center;
+    margin: auto;
+}
+
+.load > button {
+    background-color: rgb(141, 168, 199);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 30px;
+    color: rgb(230, 228, 228);
+}
+
+.load > button:hover {
+    cursor: pointer;
+    background-color:  rgb(143, 177, 216);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.45);
+    transform-origin: 1s;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination > button {
+    border: none;
+    padding: 5px 10px;
 }
